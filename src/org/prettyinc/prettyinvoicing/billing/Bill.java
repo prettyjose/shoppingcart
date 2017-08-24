@@ -1,4 +1,6 @@
-package org.prettyinc.prettyinvoicing;
+package org.prettyinc.prettyinvoicing.billing;
+
+import org.prettyinc.prettyinvoicing.items.Item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,10 +8,10 @@ import java.util.List;
 public
 class Bill {
 
-    //private static int billNum;
+    //ToDO: Add id for bill and billitem so that they can be deleted
     List<BillItem> billItems;
     Double billAmount;
-    Bill() {
+    public Bill() {
         billItems = new ArrayList<BillItem>();
         billAmount = 0.0;
     }

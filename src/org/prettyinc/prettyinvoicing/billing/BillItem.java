@@ -1,9 +1,11 @@
-package org.prettyinc.prettyinvoicing;
+package org.prettyinc.prettyinvoicing.billing;
 
-public class BillItem {
+import org.prettyinc.prettyinvoicing.items.Item;
+
+public class BillItem{
     Item shoppedItem;
     Double quantity;
-    BillItem(Item item, Double quant){
+    public BillItem(Item item, Double quant){
         shoppedItem = item;
         quantity = quant;
     }
@@ -13,5 +15,6 @@ public class BillItem {
     public Double getQuantity(){
         return quantity;
     }
+
 
 }
